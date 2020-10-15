@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anotador de truco</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index2.js"></script>
+</head>
+<body>
+    <section>
+        <article id="pantalla1" class="visible">
+            <input type="text" id="nombreEquipo1" class="nombres" placeholder="Equipo 1">
+            <input type="text" id="nombreEquipo2" class="nombres" placeholder="Equipo 2">
+            <div id="botonesPuntaje" class="fila">
+                <input id="botonA24" class="botonesPrincipal desactivado" type="button" value="a 24">
+                <input id="botonA30" class="botonesPrincipal" type="button" value="a 30">
+            </div>
+            <input id="iniciar" class="alternarPantalla botonesPrincipal" type="button" value="Iniciar">
+        </article>
+        <article id="pantalla2" class="oculto">
+            <div id="header" class="fila">
+                <div class="cuadrante fila col1">
+                    <input id="sumarE1" class="botonesOperaciones" type="button" value="+">
+                    <p id="nombre1">Equipo 1</p>
+                </div>
+                <div class="cuadrante fila ">
+                    <p id="nombre2">Equipo 2</p>
+                    <input id="sumarE2" class="botonesOperaciones" type="button" value="+">
+                </div>
+            </div>
+            <hr>
+            <div id="anotador">
+                <div class="fila">
+                    <div class="cuadrante columna col1">
+                        <img id="e1i0" class="imagenesE1" src="imagenes/0.png" alt="">
+                        <img id="e1i1" class="imagenesE1" src="imagenes/0.png" alt="">
+                        <img id="e1i2" class="imagenesE1" src="imagenes/0.png" alt="">
+                    </div>
+                    <div class="cuadrante columna">
+                        <img id="e2i0" class="imagenesE2" src="imagenes/0.png" alt="">
+                        <img id="e2i1" class="imagenesE2" src="imagenes/0.png" alt="">
+                        <img id="e2i2" class="imagenesE2" src="imagenes/0.png" alt="">
+                    </div>
+                </div>
+                <hr>
+                <div class="fila">
+                    <div class="cuadrante columna fila col1">
+                        <img id="e1i3" class="imagenesE1" src="imagenes/0.png" alt="">
+                        <img id="e1i4" class="imagenesE1" src="imagenes/0.png" alt="">
+                        <img id="e1i5" class="imagenesE1" src="imagenes/0.png" alt="">
+                    </div>
+                    <div class="cuadrante columna fila">
+                        <img id="e2i3" class="imagenesE2" src="imagenes/0.png" alt="">
+                        <img id="e2i4" class="imagenesE2" src="imagenes/0.png" alt="">
+                        <img id="e2i5" class="imagenesE2" src="imagenes/0.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <p id="meta"></p>
+            <div id="pie" class="fila">
+                <input id="restarE1" class="botonesOperaciones" type="button" value="-">
+                <p id="puntosE1">0</p>
+                <input id="fin" type="button" value="Fin">
+                <p id="puntosE2">0</p>
+                <input id="restarE2" class="botonesOperaciones" type="button" value="-">
+            </div>
+        </article>
+    </section>
+</body>
+</html>

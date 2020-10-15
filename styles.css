@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:#070;
+}
+section{
+    width:100vw;
+    text-align:center;
+}
+article{
+    width:500px;
+    display:Flex;
+    flex-direction:column;
+    align-items:center;
+    margin: auto;
+    padding:60px ;
+}
+input{
+    border: solid 1px #fff;
+    background:none;
+    font-size:30px;
+    padding: 5px;
+    color:#fff;
+}
+::placeholder{
+    color:#fff8;
+}
+p{
+    font-size:30px;
+    padding: 5px;
+    color:#fff;
+}
+img{
+    width:30%;
+    margin: 5px;
+}
+#pantalla1 > *{
+    margin: 30px auto;
+    width: 80%;
+}
+#botonesPuntaje > *:focus{
+    outline:none;
+}
+.visible{
+    display:block;
+    visibility:visible;
+}
+.oculto{
+    display:none;
+    visibility:hidden;
+}
+.botonesPrincipal{
+    width:45%;
+}
+.botonesOperaciones{
+    width:40px;
+
+}
+.desactivado{
+    opacity:0.4;
+}
+.fila{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.columna{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+.cuadrante{
+    width:50%;
+    padding: 5px;
+}
+.col1{
+    border-right: 1px solid #fff;
+}
