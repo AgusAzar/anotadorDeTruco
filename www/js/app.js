@@ -5,8 +5,7 @@ $(document).ready(function() {
     $('#botonA24').on('click',function(){
         $('#botonA24').removeClass('desactivado');
         $('#botonA30').addClass('desactivado');
-        totalPuntos = 24;
-    });
+        totalPuntos = 24; });
     $('#botonA30').on('click',function(){
         $('#botonA24').addClass('desactivado');
         $('#botonA30').removeClass('desactivado');
