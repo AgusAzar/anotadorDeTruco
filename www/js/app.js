@@ -15,7 +15,7 @@ $(document).ready(function() {
         $('#nombre1').text($('#nombreEquipo1').val());
         $('#nombre2').text($('#nombreEquipo2').val());
         $('#meta').text('a '+totalPuntos);
-        $('img').attr('src','imagenes/0.png');
+        $('img').attr('src','../img/0.png');
         alternarPantallas();
         actualizarPuntos();
     });
@@ -69,59 +69,59 @@ $(document).ready(function() {
                 var puntosMedios2 = puntajeEquipo2%5;
                 var cuadradosEnteros2 = (puntajeEquipo2 - puntosMedios2)/5;
                 for(var i = 0; i< cuadradosEnteros1; i++){
-                    $('#e1i'+i).attr('src','imagenes/5.png');
+                    $('#e1i'+i).attr('src','../img/5.png');
                 }
-                $('#e1i'+cuadradosEnteros1).attr('src','imagenes/'+puntosMedios1+'.png');
+                $('#e1i'+cuadradosEnteros1).attr('src','../img/'+puntosMedios1+'.png');
                 for(var i = 0; i< cuadradosEnteros2; i++){
-                    $('#e2i'+i).attr('src','imagenes/5.png');
+                    $('#e2i'+i).attr('src','../img/5.png');
                 }
-                $('#e2i'+cuadradosEnteros2).attr('src','imagenes/'+puntosMedios2+'.png');
+                $('#e2i'+cuadradosEnteros2).attr('src','../img/'+puntosMedios2+'.png');
                 break;
             case 24:
                 if(puntajeEquipo1 > totalPuntos/2)
                 {
-                    $('#e1i0').attr('src','imagenes/5.png');
-                    $('#e1i1').attr('src','imagenes/5.png');
-                    $('#e1i2').attr('src','imagenes/2.png');
+                    $('#e1i0').attr('src','../img/5.png');
+                    $('#e1i1').attr('src','../img/5.png');
+                    $('#e1i2').attr('src','../img/2.png');
                     var nuevoPuntaje = puntajeEquipo1 - 12;
                     var puntosMedios1 = nuevoPuntaje%5;
                     var cuadradosEnteros1 = (nuevoPuntaje-puntosMedios1)/5;
                     var numImagen = cuadradosEnteros1 + 3;
                     for(var i = 0; i< cuadradosEnteros1; i++){
                         numImagen = i + 3;
-                        $('#e1i'+numImagen).attr('src','imagenes/5.png');
+                        $('#e1i'+numImagen).attr('src','../img/5.png');
                     }
                     numImagen = cuadradosEnteros1 + 3;
-                    $('#e1i'+numImagen).attr('src','imagenes/'+puntosMedios1+'.png');
+                    $('#e1i'+numImagen).attr('src','../img/'+puntosMedios1+'.png');
                 }else{
                     var puntosMedios1 = puntajeEquipo1%5;
                     var cuadradosEnteros1 = (puntajeEquipo1 - puntosMedios1)/5;
                     for(var i = 0; i< cuadradosEnteros1; i++){
-                        $('#e1i'+i).attr('src','imagenes/5.png');
+                        $('#e1i'+i).attr('src','../img/5.png');
                     }
-                    $('#e1i'+cuadradosEnteros1).attr('src','imagenes/'+puntosMedios1+'.png');
+                    $('#e1i'+cuadradosEnteros1).attr('src','../img/'+puntosMedios1+'.png');
                 }
                 if(puntajeEquipo2 > 11){
-                    $('#e2i0').attr('src','imagenes/5.png');
-                    $('#e2i1').attr('src','imagenes/5.png');
-                    $('#e2i2').attr('src','imagenes/2.png');
+                    $('#e2i0').attr('src','../img/5.png');
+                    $('#e2i1').attr('src','../img/5.png');
+                    $('#e2i2').attr('src','../img/2.png');
                     var nuevoPuntaje = puntajeEquipo2 - 12;
                     var puntosMedios2 = nuevoPuntaje%5;
                     var cuadradosEnteros2 = (nuevoPuntaje-puntosMedios2)/5;
                     var numImagen = cuadradosEnteros2 + 3;
                     for(var i = 0; i< cuadradosEnteros2; i++){
                         numImagen = i + 3;
-                        $('#e2i'+numImagen).attr('src','imagenes/5.png');
+                        $('#e2i'+numImagen).attr('src','../img/5.png');
                     }
                     numImagen = cuadradosEnteros2 + 3;
-                    $('#e2i'+numImagen).attr('src','imagenes/'+puntosMedios2+'.png');
+                    $('#e2i'+numImagen).attr('src','../img/'+puntosMedios2+'.png');
                 }else{
                     var puntosMedios2 = puntajeEquipo2%5;
                     var cuadradosEnteros2 = (puntajeEquipo2 - puntosMedios2)/5;
                     for(var i = 0; i< cuadradosEnteros2; i++){
-                        $('#e2i'+i).attr('src','imagenes/5.png');
+                        $('#e2i'+i).attr('src','../img/5.png');
                     }
-                    $('#e2i'+cuadradosEnteros2).attr('src','imagenes/'+puntosMedios2+'.png');
+                    $('#e2i'+cuadradosEnteros2).attr('src','../img/'+puntosMedios2+'.png');
                 }
                 break;
         }

@@ -19,7 +19,7 @@
 -->
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
         <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
@@ -29,21 +29,123 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/index.css">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta
+            name="viewport"
+            content="initial-scale=1, width=device-width, viewport-fit=cover"
+        />
+        <meta name="color-scheme" content="light dark" />
+        <link rel="stylesheet" href="css/index.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <title>Hello World</title>
     </head>
     <body>
         <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+            <section>
+                <article id="pantalla1" class="visible">
+                    <input
+                        type="text"
+                        id="nombreEquipo1"
+                        class="nombres"
+                        placeholder="Equipo 1"
+                    />
+                    <input
+                        type="text"
+                        id="nombreEquipo2"
+                        class="nombres"
+                        placeholder="Equipo 2"
+                    />
+                    <div id="botonesPuntaje" class="fila">
+                        <input
+                            id="botonA24"
+                            class="botonesPrincipal desactivado"
+                            type="button"
+                            value="a 24"
+                        />
+                        <input
+                            id="botonA30"
+                            class="botonesPrincipal"
+                            type="button"
+                            value="a 30"
+                        />
+                    </div>
+                    <input
+                        id="iniciar"
+                        class="alternarPantalla botonesPrincipal"
+                        type="button"
+                        value="Iniciar"
+                    />
+                </article>
+                <article id="pantalla2" class="oculto">
+                    <div id="header" class="fila">
+                        <div class="cuadrante fila col1">
+                            <input
+                                id="sumarE1"
+                                class="botonesOperaciones"
+                                type="button"
+                                value="+"
+                            />
+                            <p id="nombre1">Equipo 1</p>
+                        </div>
+                        <div class="cuadrante fila">
+                            <p id="nombre2">Equipo 2</p>
+                            <input
+                                id="sumarE2"
+                                class="botonesOperaciones"
+                                type="button"
+                                value="+"
+                            />
+                        </div>
+                    </div>
+                    <hr />
+                    <div id="anotador">
+                        <div class="fila">
+                            <div class="cuadrante columna col1">
+                                <img id="e1i0" src="img/0.png" alt="" />
+                                <img id="e1i1" src="img/0.png" alt="" />
+                                <img id="e1i2" src="img/0.png" alt="" />
+                            </div>
+                            <div class="cuadrante columna">
+                                <img id="e2i0" src="img/0.png" alt="" />
+                                <img id="e2i1" src="img/0.png" alt="" />
+                                <img id="e2i2" src="img/0.png" alt="" />
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="fila">
+                            <div class="cuadrante columna fila col1">
+                                <img id="e1i3" src="img/0.png" alt="" />
+                                <img id="e1i4" src="img/0.png" alt="" />
+                                <img id="e1i5" src="img/0.png" alt="" />
+                            </div>
+                            <div class="cuadrante columna fila">
+                                <img id="e2i3" src="img/0.png" alt="" />
+                                <img id="e2i4" src="img/0.png" alt="" />
+                                <img id="e2i5" src="img/0.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <p id="meta"></p>
+                    <div id="pie" class="fila">
+                        <input
+                            id="restarE1"
+                            class="botonesOperaciones"
+                            type="button"
+                            value="-"
+                        />
+                        <p id="puntosE1">0</p>
+                        <input id="fin" type="button" value="Fin" />
+                        <p id="puntosE2">0</p>
+                        <input
+                            id="restarE2"
+                            class="botonesOperaciones"
+                            type="button"
+                            value="-"
+                        />
+                    </div>
+                </article>
+            </section>
         </div>
         <script src="cordova.js"></script>
         <script src="js/index.js"></script>
